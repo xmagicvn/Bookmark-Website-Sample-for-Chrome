@@ -1,0 +1,24 @@
+{
+  "name": "Bookmark Hộp carton giá rẻ | Đào Carton",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Bookmark truy cập nhanh website hopcartongiare.vn",
+  "homepage_url": "https://hopcartongiare.vn",
+  "browser_action": {
+   "default_popup": "popup.html"
+ },
+ "icons": {
+  "16": "icons/icon16.png",
+  "48": "icons/icon48.png",
+  "128": "icons/icon128.png"
+},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.hopcartongiare.vn/*",
+        "*://*.hopcartongiare.vn/*"
+      ],    
+      "js": ["jquery.js","script.js"]    
+    }
+  ]
+}
